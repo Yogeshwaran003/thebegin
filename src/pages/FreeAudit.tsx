@@ -86,7 +86,7 @@ const FreeAudit = () => {
               <input type="text" placeholder="Your Name *" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputClass} />
               <input type="email" placeholder="Email Address *" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
               <input type="tel" placeholder="Phone Number *" required value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
-              <input type="url" placeholder="Website URL(Optional)"  value={form.website} onChange={(e) => setForm({ ...form, website: e.target.value })} className={inputClass} />
+              <input type="text" placeholder="Website URL(Optional)"  value={form.website} onChange={(e) => setForm({ ...form, website: e.target.value })} className={inputClass} />
               <Button variant="hero" size="lg" type="submit" className="w-full">
                 Get My Free Audit <ArrowRight size={16} />
               </Button>
