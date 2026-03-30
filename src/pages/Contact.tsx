@@ -4,14 +4,16 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
+  setIsLoading(true);
 
   const scriptURL = "https://script.google.com/macros/s/AKfycbyK5j3_3yaLuadcTwi-wS5yPhRcznRtCIg6z4HK9LjMOoSBNt2z5k_-PxJwPZ99_uqp3A/exec";
 
@@ -35,6 +37,8 @@ const Contact = () => {
   } catch (error) {
     console.error(error);
     toast.error("Something went wrong. Please try again.");
+  } finally {
+    setIsLoading(false);
   }
 };
 
@@ -85,8 +89,17 @@ const Contact = () => {
                 <input type="text" placeholder="Company Name" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className={inputClass} />
               </div>
               <textarea placeholder="Tell us about your project *" required rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className={inputClass + " resize-none"} />
-              <Button variant="hero" size="lg" type="submit" className="w-full">
-                Send Message <Send size={16} />
+              <Button variant="hero" size="lg" type="submit" className="w-full" disabled={isLoading}>
+                {isLoading ? (
+                  <>
+                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message <Send size={16} className="ml-1" />
+                  </>
+                )}
               </Button>
             </motion.form>
           </div>
