@@ -23,7 +23,7 @@ const FreeAudit = () => {
     e.preventDefault();
 
     // 1. PASTE YOUR GOOGLE APPS SCRIPT URL HERE
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzzbVhKJr3jg0wvcR3sAbzbRhmic1U8NjwDKxCy2WkEXUIsx_TC41NrnV8r6lNQK_X4/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyRp3jQSa5dvEWzgIo3vxzgcC8FoNxRvQnPQvpL0bOidD0fM4WFA4i5ywmsBBe79Q94FQ/exec";
 
     try {
       // 2. Send the captured form state securely to Google Sheets
