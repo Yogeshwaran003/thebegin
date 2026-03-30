@@ -10,11 +10,33 @@ import { toast } from "sonner";
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyK5j3_3yaLuadcTwi-wS5yPhRcznRtCIg6z4HK9LjMOoSBNt2z5k_-PxJwPZ99_uqp3A/exec";
+
+  try {
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(form),
+    });
+
+    const result = await response.json();
+
+    if (result.status !== "success") {
+      throw new Error(result.message);
+    }
+
     toast.success("Thank you! We'll get back to you within 24 hours.");
+
     setForm({ name: "", email: "", phone: "", company: "", message: "" });
-  };
+
+  } catch (error) {
+    console.error(error);
+    toast.error("Something went wrong. Please try again.");
+  }
+};
 
   const inputClass = "w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary";
 
