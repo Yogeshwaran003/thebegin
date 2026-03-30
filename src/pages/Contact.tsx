@@ -81,7 +81,7 @@ const Contact = () => {
                 <input type="email" placeholder="Email Address *" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
               </div>
               <div className="grid gap-5 md:grid-cols-2">
-                <input type="tel" placeholder="Phone Number" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
+                <input type="number" placeholder="Phone Number" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
                 <input type="text" placeholder="Company Name" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className={inputClass} />
               </div>
               <textarea placeholder="Tell us about your project *" required rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className={inputClass + " resize-none"} />
