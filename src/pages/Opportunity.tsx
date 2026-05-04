@@ -80,34 +80,34 @@ const Opportunity = () => {
                   </div>
                 </div> */}
 
-                <div className="rounded-[1.75rem] border border-emerald-500/20 bg-slate-950/95 p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-emerald-200/80">Choose your plan</p>
-                  <div className="mt-5 grid gap-4 md:grid-cols-2">
-                    <div className="rounded-3xl border border-emerald-500/15 bg-slate-900 p-5 text-slate-100 shadow-sm shadow-emerald-500/10">
-                      <div className="flex items-center justify-between gap-4">
-                        <p className="text-base font-semibold">Intermediate</p>
-                        <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold uppercase text-emerald-200">Best value</span>
+                    {/* <div className="rounded-[1.75rem] border border-emerald-500/20 bg-slate-950/95 p-6">
+                      <p className="text-sm uppercase tracking-[0.24em] text-emerald-200/80">Choose your plan</p>
+                      <div className="mt-5 grid gap-4 md:grid-cols-2">
+                        <div className="rounded-3xl border border-emerald-500/15 bg-slate-900 p-5 text-slate-100 shadow-sm shadow-emerald-500/10">
+                          <div className="flex items-center justify-between gap-4">
+                            <p className="text-base font-semibold">Intermediate</p>
+                            <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold uppercase text-emerald-200">Best value</span>
+                          </div>
+                          <p className="mt-5 text-3xl font-bold text-white">₹4,500</p>
+                          <ul className="mt-5 space-y-3 text-sm text-slate-400">
+                            <li>Performance-based stipend</li>
+                            <li>Live interview preparation</li>
+                            <li>Includes everything in Self Paced</li>
+                          </ul>
+                        </div>
+                        <div className="rounded-3xl border border-slate-800 bg-slate-900 p-5 text-slate-100">
+                          <p className="text-base font-semibold">Self Paced</p>
+                          <p className="mt-5 text-3xl font-bold text-white">₹3,500</p>
+                          <ul className="mt-5 space-y-3 text-sm text-slate-400">
+                            <li>Complete curriculum</li>
+                            <li>Projects & checkpoints</li>
+                            <li>QR certificate</li>
+                          </ul>
+                        </div>
                       </div>
-                      <p className="mt-5 text-3xl font-bold text-white">₹4,500</p>
-                      <ul className="mt-5 space-y-3 text-sm text-slate-400">
-                        <li>Performance-based stipend</li>
-                        <li>Live interview preparation</li>
-                        <li>Includes everything in Self Paced</li>
-                      </ul>
-                    </div>
-                    <div className="rounded-3xl border border-slate-800 bg-slate-900 p-5 text-slate-100">
-                      <p className="text-base font-semibold">Self Paced</p>
-                      <p className="mt-5 text-3xl font-bold text-white">₹3,500</p>
-                      <ul className="mt-5 space-y-3 text-sm text-slate-400">
-                        <li>Complete curriculum</li>
-                        <li>Projects & checkpoints</li>
-                        <li>QR certificate</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                    </div> */}
 
-                <div className="rounded-[1.75rem] border border-emerald-500/15 bg-slate-950/95 p-6">
+                {/* <div className="rounded-[1.75rem] border border-emerald-500/15 bg-slate-950/95 p-6">
                   <p className="text-sm uppercase tracking-[0.24em] text-emerald-200/80">Choose how to pay</p>
                   <div className="mt-5 grid gap-4 md:grid-cols-2">
                     <button className="rounded-3xl border border-emerald-500/20 bg-slate-900 p-5 text-left text-slate-100 transition hover:border-emerald-400/40">
@@ -126,7 +126,7 @@ const Opportunity = () => {
                       <span className="text-sm text-slate-400">Before Training: ₹3,501</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="rounded-[1.75rem] border border-emerald-500/15 bg-slate-950/95 p-6">
                   <div className="grid gap-4">
