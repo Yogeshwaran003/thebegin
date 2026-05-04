@@ -11,6 +11,7 @@ import Blog from "./pages/Blog.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import FreeAudit from "./pages/FreeAudit.tsx";
+import Opportunity from "./pages/Opportunity.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/free-audit" element={<FreeAudit />} />
+          <Route path="/opportunity" element={<Opportunity />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

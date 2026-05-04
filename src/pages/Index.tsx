@@ -263,7 +263,7 @@ const Index = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="py-16 border-t border-border bg-card">
+      {/* <section className="py-16 border-t border-border bg-card">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 max-w-3xl mx-auto">
             <div>
@@ -280,7 +280,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
