@@ -159,7 +159,7 @@ const Opportunity = () => {
                       </label>
                     </div>
                     <Button variant="hero" size="lg" className="w-full" asChild>
-                      <Link to="https://pages.razorpay.com/pl_Skqr0VCdUFygJ3/view">Pay ₹999 & Reserve seat</Link>
+                      <Link to="https://pages.razorpay.com/pl_Skqr0VCdUFygJ3/view">Pay ₹9999 & Reserve seat</Link>
                     </Button>
                   </div>
                 </div>
